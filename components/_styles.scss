@@ -1,0 +1,71 @@
+@import "./colors";
+
+//esse mixin precisa  ser importado
+
+@function changeColor($type, $backgroundColor) {
+  @if $type == light {
+    //lighten e função nativa do sass
+    $newColor: lighten($backgroundColor, 30%);
+    @return $newColor;
+  } @else if $type == dark {
+    $newColor: darken($backgroundColor, 10%);
+    @return $newColor;
+  } @else {
+    $newColor: $backgroundColor;
+    @return $newColor;
+  }
+}
+
+@mixin card($backgroundColor, $gap, $status) {
+  background-color: $backgroundColor;
+  display: flex;
+  gap: $gap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
+  &::before {
+    content: "status:" + $status;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+    position: absolute;
+    background-color: $black;
+    color: $white;
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+
+  &:hover {
+    background-color: changeColor(light, $backgroundColor);
+    cursor: pointer;
+  }
+}
+//determinado valor padrão usando mixin
+@mixin btn($width: 120px, $backgroundColor: #ccc, $fontColor: #333) {
+  background-color: $backgroundColor;
+  color: $fontColor;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: $width;
+  cursor: pointer;
+}
+
+.btn-large {
+  @include btn(320px);
+}
+
+.btn-default {
+  @include btn();
+}
+
+.card-positive {
+  @include card($green, 20px, "positive");
+}
+
+.card-negative {
+  @include card(changeColor(dark, $red), 20px, "negative");
+}
