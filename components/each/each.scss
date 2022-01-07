@@ -1,0 +1,39 @@
+$socialMedias: youtube, linkedin, facebook, twitter, instagram;
+
+@each $network in $socialMedias {
+  //vamos criar nossas classes e tambem
+  //concatena para pegar as imagens
+  .net-#{$network} {
+    background-image: url(../images/#{$network}.svg);
+  }
+}
+
+$socialMedias2: (
+  youtube: red,
+  linkedin: #6a5acd,
+  facebook: rgb(59, 89, 152),
+  twitter: #1da1f2,
+  instagram: #e1306c,
+);
+//pode ser qualquer palavra e tipo desestruturação, importante e apos o in
+@each $key, $value in $socialMedias2 {
+  .work-#{$key} {
+    background-color: $value;
+  }
+}
+
+$socialMedias3: 
+  youtube red 21px, 
+  linkedin #6a5acd 65px,
+  facebook rgb(59, 89, 152) 21px, 
+  twitter #1da1f2 19px, 
+  instagram #e1306c 21px;
+
+//pode ser qualquer palavra e tipo desestruturação importante e apos in
+@each $key, $value, $height in $socialMedias3 {
+  .work2-#{$key} {
+    background-color: $value;
+    height: $height;
+    width: $height;
+  }
+}

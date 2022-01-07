@@ -1,0 +1,70 @@
+.net-youtube {
+  background-image: url(../images/youtube.svg);
+}
+
+.net-linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+.net-facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.net-twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.net-instagram {
+  background-image: url(../images/instagram.svg);
+}
+
+.work-youtube {
+  background-color: red;
+}
+
+.work-linkedin {
+  background-color: #6a5acd;
+}
+
+.work-facebook {
+  background-color: #3b5998;
+}
+
+.work-twitter {
+  background-color: #1da1f2;
+}
+
+.work-instagram {
+  background-color: #e1306c;
+}
+
+.work2-youtube {
+  background-color: red;
+  height: 21px;
+  width: 21px;
+}
+
+.work2-linkedin {
+  background-color: #6a5acd;
+  height: 65px;
+  width: 65px;
+}
+
+.work2-facebook {
+  background-color: #3b5998;
+  height: 21px;
+  width: 21px;
+}
+
+.work2-twitter {
+  background-color: #1da1f2;
+  height: 19px;
+  width: 19px;
+}
+
+.work2-instagram {
+  background-color: #e1306c;
+  height: 21px;
+  width: 21px;
+}
+/*# sourceMappingURL=each.css.map */
