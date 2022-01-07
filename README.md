@@ -9,7 +9,7 @@ Compreender melhor pre processador Sass e suas ferramentas
 - Content é um recurso bom para trabalhar conteúdos dinâmicos, algo útil e responsividade.
 - Exemplo abaixo mostra o poder de usar content, com ele não precisa passar os parâmetros manualmente ao escopo da do média query.
 
-``` sass
+``` scss
 
 @mixin responsive($type) {
   @if $type == mobile {
@@ -48,7 +48,7 @@ nav {
 - For no Sass segue mesmo principio que outra linguagem, particularidades estão nas escritas.
 - Nos determinamos quando inicia e termina, pode usar a palavra reservada to ou through.
 
-``` sass
+``` scss
 
 
 @for $item from 1 to 6 {
@@ -81,7 +81,7 @@ nav {
 - Abaixo tem exemplos trabalhando com ate 3 variáveis.
 
 
-``` sass
+``` scss
 
 $socialMedias: youtube, linkedin, facebook, twitter, instagram;
 
@@ -131,7 +131,7 @@ $socialMedias3:
 - Mixin precisam estar incluídas dentro de uma classe para funcionar.
 - Funções e Mixin são bens parecidos as diferenças são sucintas, em funções retornamos valores e Mixins são usadas para includes de blocos.
 
-``` sass
+``` scss
 
 @mixin card($backgroundColor, $gap, $status) {
   background-color: $backgroundColor;
