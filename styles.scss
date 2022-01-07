@@ -22,3 +22,20 @@ main {
   height: 100vh;
   width: 100%;
 }
+
+@mixin titles($style: normal) {
+  @if $style == large {
+    font-size: 32px;
+  } @else if $style == normal {
+    font-size: 15px;
+  } @else {
+    font-size: 7px;
+  }
+}
+
+.title {
+  @include titles(xx);
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+}

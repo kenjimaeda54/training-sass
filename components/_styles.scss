@@ -1,5 +1,5 @@
 @import "./colors";
-
+$theme: soon;
 //esse mixin precisa  ser importado
 
 @function changeColor($type, $backgroundColor) {
@@ -63,7 +63,11 @@
 }
 
 .card-positive {
-  @include card($green, 20px, "positive");
+  @if $theme == winter {
+    @include card($white, 20px, "positive");
+  } @else {
+    @include card($green, 20px, "positive");
+  }
 }
 
 .card-negative {
