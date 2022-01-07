@@ -1,0 +1,19 @@
+//vou criar alternando entre os intens pares e impares
+
+@for $item from 1 to 6 {
+  //comparando par
+  @if $item % 2 == 0 {
+    .nav-#{$item}:nth-child(#{$item}) {
+      color: blue;
+      padding: 20px;
+      height: 20px;
+    }
+  }
+  @if $item % 2 == 1 {
+    .nav-#{$item}:nth-child(#{$item}) {
+      color: red;
+      padding: 20px;
+      height: 20px;
+    }
+  }
+}

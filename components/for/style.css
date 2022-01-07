@@ -1,0 +1,30 @@
+.nav-1:nth-child(1) {
+  color: red;
+  padding: 20px;
+  height: 20px;
+}
+
+.nav-2:nth-child(2) {
+  color: blue;
+  padding: 20px;
+  height: 20px;
+}
+
+.nav-3:nth-child(3) {
+  color: red;
+  padding: 20px;
+  height: 20px;
+}
+
+.nav-4:nth-child(4) {
+  color: blue;
+  padding: 20px;
+  height: 20px;
+}
+
+.nav-5:nth-child(5) {
+  color: red;
+  padding: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */
