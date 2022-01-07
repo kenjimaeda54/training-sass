@@ -1,7 +1,7 @@
 # training-sass
 Treinamento Sass
 
-# Motivacao
+# Motivação
 Compreender melhor pre processador Sass e suas ferramentas
 
 
