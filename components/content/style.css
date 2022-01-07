@@ -1,0 +1,30 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1200px;
+  padding: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    height: 200vh;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  nav {
+    height: 300vh;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    height: 400vh;
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

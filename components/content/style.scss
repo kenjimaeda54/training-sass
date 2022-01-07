@@ -1,0 +1,36 @@
+@mixin responsive($type) {
+  @if $type == mobile {
+    @media screen and (max-width: 320px) {
+      // content vai retornar tudo que esta dentro do media
+      @content;
+    }
+  } @else if $type == tablet {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $type == desktop {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  height: 1200px;
+  padding: 20px;
+  width: 100%;
+  @include responsive(mobile) {
+    //tudo que for colocado isso vai refletir no componente todo
+    height: 200vh;
+    padding: 10px;
+  }
+  @include responsive(tablet) {
+    height: 300vh;
+    padding: 20px;
+  }
+  @include responsive(desktop) {
+    height: 400vh;
+    padding: 30px;
+  }
+}
